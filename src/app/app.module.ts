@@ -9,12 +9,16 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { HomeAdminPageComponent } from './view/admin/home-admin-page/home-admin-page.component';
 import { HomePageComponent } from './view/client/home-page/home-page.component';
+import { LayoutsComponent } from './layouts/layouts.component';
+import { SkillPageComponent } from './view/admin/skill-page/skill-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HomeAdminPageComponent,
+    LayoutsComponent,
+    SkillPageComponent,
   ],
   imports: [
     BrowserModule,

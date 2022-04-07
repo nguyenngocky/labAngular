@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LayoutsComponent } from './layouts/layouts.component';
 import { HomeAdminPageComponent } from './view/admin/home-admin-page/home-admin-page.component';
+import { SkillPageComponent } from './view/admin/skill-page/skill-page.component';
 import { HomePageComponent } from './view/client/home-page/home-page.component';
 
 const routes: Routes = [
@@ -16,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: "admin",
-    component: HomeAdminPageComponent,
+    component: LayoutsComponent,
     children: [
       {
         path: "",
@@ -26,6 +28,10 @@ const routes: Routes = [
       {
         path: 'home-admin',
         component: HomeAdminPageComponent
+      },
+      {
+        path: 'skill',
+        component: SkillPageComponent
       },
     ]
   }
