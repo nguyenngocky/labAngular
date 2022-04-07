@@ -35,7 +35,7 @@ export class HomePageComponent implements OnInit {
   }
 
   getSkill(){
-    this.sk.getSkillUser().subscribe(data => {
+    this.sk.getSkills().subscribe(data => {
       this.skill = data;
       console.log(data);
       

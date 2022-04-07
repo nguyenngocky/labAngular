@@ -72,7 +72,6 @@
 <!--Header-->
   <header class="main-header" style="background-image: url(/assets/img/img_bg_header.jpg)">
     <div class="container" *ngFor="let u of user">
-      <div *ngIf="u.status == 1">
       <div class="row personal-profile">
         <div class="col-md-4 personal-profile__avatar">
           <img class="" src="{{u.image}}" alt="avatar">
@@ -99,14 +98,12 @@
           </p>
           </div>
         </div>
-      </div>
     </div>
   </header>
 <!--Header-->
 
 <!--Hello-->
   <section id="hello" class="container section" *ngFor="let u of user">
-    <div class="row" *ngIf="u.status == 1">
       <div class="col-md-10">
         <h2 id="hello_header" class="section__title">Hi_</h2>
         <p class="section__description">
@@ -114,7 +111,6 @@
         </p>
         <a href="" class="section_btn site-btn"><img src="" alt="">Download CV</a>
       </div>
-    </div>
   </section>
 <!--Hello-->
 
@@ -123,24 +119,22 @@
 <!--Resume-->
   <section id="resume" class="container section">
     <div class="row" *ngFor="let u of user">
-      <div class="col-md-10" *ngIf="u.status == 1">
+      <div class="col-md-10">
         <h2 id="resume_header" class="section__title">Resume_</h2>
         <p class="section__description">
          {{u.resume}}
         </p>
       </div>
     </div>
-    <div class="row" *ngFor="let u of user">
-      <div class="col-md-8 section__resume resume-list" *ngIf="u.status == 1">
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list" >
         <h3 class="resume-list_title">education</h3>
-        <div *ngFor="let s of school">
-          <div class="resume-list__block" *ngIf="s.usersId == u.id">
-              <p class="resume-list__block-title">{{s.name}} </p>
-              <p class="resume-list__block-date">{{s.start_at}} - {{s.complete_at}}</p>
-              <p>
-                {{s.achievement}}
-              </p>
-          </div>
+        <div class="resume-list__block" *ngFor="let s of school">
+          <p class="resume-list__block-title">{{s.name}} </p>
+          <p class="resume-list__block-date">{{s.start_at}} - {{s.complete_at}}</p>
+          <p>
+            {{s.achievement}}
+          </p>
         </div>
       </div>
     </div>

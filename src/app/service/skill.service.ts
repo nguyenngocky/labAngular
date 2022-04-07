@@ -14,10 +14,6 @@ export class SkillService {
       return this.http.get(apiUrl);
     }
 
-    getSkillUser(): Observable<any> {
-      return this.http.get(`${apiUrl}?_embed=users`);
-    }
-
     getSkill(id: number | string): Observable<any> {
       return this.http.get(`${apiUrl}/${id}`);
     }
