@@ -1,96 +1,87 @@
 {
-    "users": [
-        {
-          "id": 1,
-          "name": "Nguyen Ngoc Ky",
-          "profile__work": "backend developer",
-          "age": 20,
-          "birthday": "03/07/2002",
-          "phone": "0335075778",
-          "email": "nguyenngocky1995@gmail.com",
-          "address": "Ha Giang, Viet Nam",
-          "image": "https://scontent.fpnh22-3.fna.fbcdn.net/v/t39.30808-6/265800883_429956338591065_7150281577074276316_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qwWiy3RhDZQAX8riKLN&_nc_ht=scontent.fpnh22-3.fna&oh=00_AT-hDBsXfhRGdhtvakXel4Ui4TFEetbI1jkm8X_7tGmTQg&oe=6252EB66",
-          "git": "https://github.com/nguyenngocky",
-          "facebook": "https://www.facebook.com/Legendary.kyy/",
-          "desc": "abcxyz",
-          "resume": "abcascsac"
-        }
-    ],
-    "skills": [
-        {
-            "id": 1,
-            "name_skill": "HTMLaaaa",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
-            "point": 70
-        },
-        {
-            "id": 2,
-            "name_skill": "HTML",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
-            "point": 70
-        },
-        {
-            "id": 3,
-            "name_skill": "HTML",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
-            "point": 70
-        },
-        {
-            "id": 4,
-            "name_skill": "HTML",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
-            "point": 70
-        }
-    ],
-    "projects": [
-        {
-            "id": 1,
-            "name": "Dự án website music",
-            "image": "https://photo-zmp3.zmdcdn.me/banner/a/3/0/b/a30b4f6c23bbffbf47c5c4a7213023f5.jpg",
-            "create_at": "07/12/2021",
-            "complete_at": "25/12/2021",
-            "desc": "abcxyz"
-        },
-        {
-            "id": 2,
-            "name": "Dự án website music",
-            "image": "https://photo-zmp3.zmdcdn.me/banner/a/3/0/b/a30b4f6c23bbffbf47c5c4a7213023f5.jpg",
-            "create_at": "07/12/2021",
-            "complete_at": "25/12/2021",
-            "desc": "abcxyz"
-        }
-    ],
-    "schools": [
-        {
-            "id": 1,
-            "name": "THPT Cao Bằng",
-            "start_at": "07/12/2021",
-            "complete_at": "25/12/2021",
-            "achievement": "abcxyz"
-        },
-        {
-            "id": 2,
-            "name": "THPT Việt Vinh",
-            "start_at": "07/12/2021",
-            "complete_at": "25/12/2021",
-            "achievement": "abcxyz"
-            
-        },
-        {
-            "id": 3,
-            "name": "THPT Việt Vinh",
-            "start_at": "07/12/2021",
-            "complete_at": "25/12/2021",
-            "achievement": "abcxyz"
-            
-        },
-        {
-            "id": 4,
-            "name": "THPT Việt Vinh",
-            "start_at": "07/12/2021",
-            "complete_at": "25/12/2021",
-            "achievement": "abcxyz"
-            
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Nguyen Ngoc Ky",
+      "profile__work": "backend developer",
+      "age": 20,
+      "birthday": "03/07/2002",
+      "phone": "0335075778",
+      "email": "nguyenngocky1995@gmail.com",
+      "address": "Ha Giang, Viet Nam",
+      "image": "https://scontent.fpnh22-3.fna.fbcdn.net/v/t39.30808-6/265800883_429956338591065_7150281577074276316_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qwWiy3RhDZQAX8riKLN&_nc_ht=scontent.fpnh22-3.fna&oh=00_AT-hDBsXfhRGdhtvakXel4Ui4TFEetbI1jkm8X_7tGmTQg&oe=6252EB66",
+      "git": "https://github.com/nguyenngocky",
+      "facebook": "https://www.facebook.com/Legendary.kyy/",
+      "desc": "abcxyz",
+      "resume": "abcascsac"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name_skill": "HTMLaaaa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
+      "point": 70
+    },
+    {
+      "id": 2,
+      "name_skill": "HTML",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
+      "point": 70
+    },
+    {
+      "id": 3,
+      "name_skill": "HTML",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
+      "point": 70
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Dự án website music",
+      "image": "https://photo-zmp3.zmdcdn.me/banner/a/3/0/b/a30b4f6c23bbffbf47c5c4a7213023f5.jpg",
+      "create_at": "07/12/2021",
+      "complete_at": "25/12/2021",
+      "desc": "abcxyz"
+    },
+    {
+      "id": 2,
+      "name": "Dự án website music",
+      "image": "https://photo-zmp3.zmdcdn.me/banner/a/3/0/b/a30b4f6c23bbffbf47c5c4a7213023f5.jpg",
+      "create_at": "07/12/2021",
+      "complete_at": "25/12/2021",
+      "desc": "abcxyz"
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "THPT Cao Bằng",
+      "start_at": "07/12/2021",
+      "complete_at": "25/12/2021",
+      "achievement": "abcxyz"
+    },
+    {
+      "id": 2,
+      "name": "THPT Việt Vinh",
+      "start_at": "07/12/2021",
+      "complete_at": "25/12/2021",
+      "achievement": "abcxyz"
+    },
+    {
+      "id": 3,
+      "name": "THPT Việt Vinh",
+      "start_at": "07/12/2021",
+      "complete_at": "25/12/2021",
+      "achievement": "abcxyz"
+    },
+    {
+      "id": 4,
+      "name": "THPT Việt Vinh",
+      "start_at": "07/12/2021",
+      "complete_at": "25/12/2021",
+      "achievement": "abcxyz"
+    }
+  ]
 }

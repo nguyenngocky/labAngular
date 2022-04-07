@@ -11,6 +11,8 @@ import { HomeAdminPageComponent } from './view/admin/home-admin-page/home-admin-
 import { HomePageComponent } from './view/client/home-page/home-page.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { SkillPageComponent } from './view/admin/skill-page/skill-page.component';
+import { SkillAddPageComponent } from './view/admin/skill-add-page/skill-add-page.component';
+import { ShowValidateComponent } from './show-validate/show-validate.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { SkillPageComponent } from './view/admin/skill-page/skill-page.component
     HomeAdminPageComponent,
     LayoutsComponent,
     SkillPageComponent,
+    SkillAddPageComponent,
+    ShowValidateComponent,
   ],
   imports: [
     BrowserModule,

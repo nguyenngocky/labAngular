@@ -34,23 +34,4 @@ export class SkillPageComponent implements OnInit {
     }
   }
 
-  parentChangeStatus(newStatus:number, productId:number) {
-    const currentProduct = this.skill.find((product:any) =>
-      product.id === productId
-    );
-
-    if (currentProduct) {
-      this.ps.updateSkill(
-        productId,
-        {
-          ...currentProduct,
-          status: newStatus
-        }
-      ).subscribe((data) => {
-        this.onGetList();
-      });
-    }
-    
-  }
-
 }

@@ -1,0 +1,11 @@
+<div *ngIf="formData?.dirty" class="text-danger">
+    <div *ngIf="formData?.errors?.['required']">
+        {{key}} phải nhập
+    </div>
+    <div *ngIf="formData?.errors?.['max']">
+        {{key}} dưới 100
+    </div>
+    <div *ngIf="formData?.errors?.['email']">
+        {{key}} phải đúng, VD: abc@gmail.com
+    </div>
+</div>
