@@ -6,7 +6,7 @@
           "profile__work": "backend developer",
           "age": 20,
           "birthday": "03/07/2002",
-          "phone": 8435075778,
+          "phone": "0335075778",
           "email": "nguyenngocky1995@gmail.com",
           "address": "Ha Giang, Viet Nam",
           "image": "https://scontent.fpnh22-3.fna.fbcdn.net/v/t39.30808-6/265800883_429956338591065_7150281577074276316_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qwWiy3RhDZQAX8riKLN&_nc_ht=scontent.fpnh22-3.fna&oh=00_AT-hDBsXfhRGdhtvakXel4Ui4TFEetbI1jkm8X_7tGmTQg&oe=6252EB66",
@@ -15,29 +15,52 @@
           "desc": "abcxyz",
           "resume": "abcascsac",
           "status": 1
-        }
+        },
+        {
+            "id": 2,
+            "name": "Nguyen Ngoc Kya",
+            "profile__work": "backend developer",
+            "age": 20,
+            "birthday": "03/07/2002",
+            "phone": 8435075778,
+            "email": "nguyenngocky1995@gmail.com",
+            "address": "Ha Giang, Viet Nam",
+            "image": "https://scontent.fpnh22-3.fna.fbcdn.net/v/t39.30808-6/265800883_429956338591065_7150281577074276316_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qwWiy3RhDZQAX8riKLN&_nc_ht=scontent.fpnh22-3.fna&oh=00_AT-hDBsXfhRGdhtvakXel4Ui4TFEetbI1jkm8X_7tGmTQg&oe=6252EB66",
+            "git": "https://github.com/nguyenngocky",
+            "facebook": "https://www.facebook.com/Legendary.kyy/",
+            "desc": "abcxyz",
+            "resume": "abcascsac",
+            "status": 0
+          }
     ],
     "skills": [
         {
             "id": 1,
-            "name_skill": "HTML",
+            "name_skill": "HTMLaaaa",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
             "point": 70,
-            "id_user": 1
+            "usersId": 2
         },
         {
             "id": 2,
             "name_skill": "HTML",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
             "point": 70,
-            "id_user": 1
+            "usersId": 1
         },
         {
             "id": 3,
             "name_skill": "HTML",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
             "point": 70,
-            "id_user": 1
+            "usersId": 1
+        },
+        {
+            "id": 4,
+            "name_skill": "HTML",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
+            "point": 70,
+            "usersId": 2
         }
     ],
     "projects": [
@@ -48,7 +71,7 @@
             "create_at": "07/12/2021",
             "complete_at": "25/12/2021",
             "desc": "abcxyz",
-            "id_user": 1
+            "usersId": 1
         },
         {
             "id": 2,
@@ -57,41 +80,41 @@
             "create_at": "07/12/2021",
             "complete_at": "25/12/2021",
             "desc": "abcxyz",
-            "id_user": 1
+            "usersId": 1
         }
     ],
     "schools": [
         {
             "id": 1,
-            "name": "THPT Việt Vinh",
-            "create_at": "07/12/2021",
+            "name": "THPT Cao Bằng",
+            "start_at": "07/12/2021",
             "complete_at": "25/12/2021",
             "achievement": "abcxyz",
-            "id_user": 1
+            "usersId": 2
         },
         {
             "id": 2,
             "name": "THPT Việt Vinh",
-            "create_at": "07/12/2021",
+            "start_at": "07/12/2021",
             "complete_at": "25/12/2021",
             "achievement": "abcxyz",
-            "id_user": 1
+            "usersId": 1
         },
         {
             "id": 3,
             "name": "THPT Việt Vinh",
-            "create_at": "07/12/2021",
+            "start_at": "07/12/2021",
             "complete_at": "25/12/2021",
             "achievement": "abcxyz",
-            "id_user": 1
+            "usersId": 1
         },
         {
             "id": 4,
             "name": "THPT Việt Vinh",
-            "create_at": "07/12/2021",
+            "start_at": "07/12/2021",
             "complete_at": "25/12/2021",
             "achievement": "abcxyz",
-            "id_user": 1
+            "usersId": 1
         }
     ]
 }

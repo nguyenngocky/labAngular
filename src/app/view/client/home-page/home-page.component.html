@@ -71,31 +71,33 @@
 
 <!--Header-->
   <header class="main-header" style="background-image: url(/assets/img/img_bg_header.jpg)">
-    <div class="container">
+    <div class="container" *ngFor="let u of user">
+      <div *ngIf="u.status == 1">
       <div class="row personal-profile">
         <div class="col-md-4 personal-profile__avatar">
-          <img class="" src="http://via.placeholder.com/350x400" alt="avatar">
+          <img class="" src="{{u.image}}" alt="avatar">
         </div>
         <div class="col-md-8">
-          <p class="personal-profile__name">Nguyen Ngoc Ky_</p>
-          <p class="personal-profile__work">backend developer</p>
+            <p class="personal-profile__name">{{u.name}}_</p>
+          <p class="personal-profile__work">{{u.profile__work}}</p>
           <div class="personal-profile__contacts">
             <dl class="contact-list contact-list__opacity-titles">
               <dt>Age:</dt>
-              <dd>20</dd>
+              <dd>{{u.age}}</dd>
               <dt>Phone:</dt>
-              <dd><a href="tel:82344563333">0335 075 778</a></dd>
+              <dd><a href="tel:0335075778">{{u.phone}}</a></dd>
               <dt>Email:</dt>
-              <dd><a href="mailto:mail@mail.com">mail@mail.com</a></dd>
+              <dd><a href="mailto:{{u.email}}">{{u.email}}</a></dd>
               <dt>Address:</dt>
-              <dd>Melbourne Victoria 3000 Australia</dd>
+              <dd>{{u.address}}</dd>
             </dl>
           </div>
           <p class="personal-profile__social">
-            <a href="" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            <a href="" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            <a href="{{u.git}}" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="{{u.facebook}}" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <a href="{{u.facebook}}" target="_blank"><i class="fa fa-facebook-square"></i></a>
           </p>
+          </div>
         </div>
       </div>
     </div>
@@ -103,17 +105,14 @@
 <!--Header-->
 
 <!--Hello-->
-  <section id="hello" class="container section">
-    <div class="row">
+  <section id="hello" class="container section" *ngFor="let u of user">
+    <div class="row" *ngIf="u.status == 1">
       <div class="col-md-10">
         <h2 id="hello_header" class="section__title">Hi_</h2>
         <p class="section__description">
-          I am Junior Web developer able to build a Web presence from the ground up - from concept, navigation,
-          layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using
-          current best practices in Web development. Fast learner, hard worker and team player who is proficient in
-          an array of scripting languages and multimedia Web tools.
+          {{u.desc}}
         </p>
-        <a href="" class="section_btn site-btn"><img src="/assets/img/img_btn_icon.png" alt="">Download CV</a>
+        <a href="" class="section_btn site-btn"><img src="" alt="">Download CV</a>
       </div>
     </div>
   </section>
@@ -123,42 +122,25 @@
 
 <!--Resume-->
   <section id="resume" class="container section">
-    <div class="row">
-      <div class="col-md-10">
+    <div class="row" *ngFor="let u of user">
+      <div class="col-md-10" *ngIf="u.status == 1">
         <h2 id="resume_header" class="section__title">Resume_</h2>
         <p class="section__description">
-          Lorem ipsum dolor sit amet, <i><b>communication</b></i> adipisicing elit, <i><b>helpful</b></i> eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <i><b>sence of
-          humour</b></i> ullamco laboris nisi ut <i><b>honest</b></i> ea commodo consequat. Duis aute irure dolor in
-          upper-intermediate english level velit  dolore eu ivivdtevoluptatem ontend developer.
+         {{u.resume}}
         </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-8 section__resume resume-list">
+    <div class="row" *ngFor="let u of user">
+      <div class="col-md-8 section__resume resume-list" *ngIf="u.status == 1">
         <h3 class="resume-list_title">education</h3>
-        <div class="resume-list__block">
-          <p class="resume-list__block-title">University of Minnesota Twin Cities </p>
-          <p class="resume-list__block-date">2006 - 2010</p>
-          <p>
-            Bachelor Computer Engineering Lorem
-          </p>
-        </div>
-        <div class="resume-list__block">
-          <p class="resume-list__block-title">School of Informational technologies</p>
-          <p class="resume-list__block-date">2004 - 2005</p>
-          <p>
-            Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius-
-            mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          </p>
-        </div>
-        <div class="resume-list__block">
-          <p class="resume-list__block-title">Lorem Ipsum School</p>
-          <p class="resume-list__block-date">2003 - 2006</p>
-          <p>
-            Student, Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor
-            incididunt ut
-          </p>
+        <div *ngFor="let s of school">
+          <div class="resume-list__block" *ngIf="s.usersId == u.id">
+              <p class="resume-list__block-title">{{s.name}} </p>
+              <p class="resume-list__block-date">{{s.start_at}} - {{s.complete_at}}</p>
+              <p>
+                {{s.achievement}}
+              </p>
+          </div>
         </div>
       </div>
     </div>
