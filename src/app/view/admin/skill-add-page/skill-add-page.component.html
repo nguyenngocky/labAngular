@@ -6,7 +6,7 @@
 
     <div class="mb-3">
         <label for="">Name</label>
-        <input type="text" class="form-control" placeholder="Enter your Name_skill" formControlName="name_skill">
+        <input type="text" class="form-control" placeholder="Enter your Name_skill" formControlName="name_skill" [(ngModel)]="skillDetail.name_skill">
         <app-show-validate
         [formField]="skillForm.get('name_skill')"
         key="Name_skill"
@@ -15,7 +15,7 @@
 
     <div class="mb-3">
         <label for="">image</label>
-        <input type="text" class="form-control" placeholder="Enter your link Image" formControlName="image">
+        <input type="text" class="form-control" placeholder="Enter your link Image" formControlName="image" [(ngModel)]="skillDetail.image">
         <app-show-validate
         [formField]="skillForm.get('image')"
         key="Image"
@@ -24,7 +24,7 @@
 
     <div class="mb-3">
         <label for="">Point</label>
-        <input type="number" class="form-control" placeholder="Enter your Point" formControlName="point">
+        <input type="number" class="form-control" placeholder="Enter your Point" formControlName="point" [(ngModel)]="skillDetail.point">
         <app-show-validate
         [formField]="skillForm.get('point')"
         key="Point"

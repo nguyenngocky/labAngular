@@ -51,16 +51,14 @@ export class SkillAddPageComponent implements OnInit {
   OnUpdate(obj :any) {
     if(this.id){
       this.ps.updateSkill(this.id, obj).subscribe();
-    setTimeout(() => {
-      this.router.navigate(['/products']);
+      this.router.navigate(['/admin/skill']);
       this.toastr.success("Cập nhật thành công")
-    }, 500)
+  
     }else {
       this.ps.createSkill(obj).subscribe();
-      setTimeout(() => {
-        this.router.navigate(['/products']);
-        this.toastr.success("Thêm mới thành công")
-      }, 500)
+      this.router.navigate(['/admin/skill']);
+      this.toastr.success("Thêm mới thành công")
+  
     }
   }
 

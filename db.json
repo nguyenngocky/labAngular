@@ -18,10 +18,10 @@
   ],
   "skills": [
     {
-      "id": 1,
       "name_skill": "HTMLaaaa",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
-      "point": 70
+      "point": 90,
+      "id": 1
     },
     {
       "id": 2,
@@ -30,10 +30,10 @@
       "point": 70
     },
     {
-      "id": 3,
       "name_skill": "HTML",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png",
-      "point": 70
+      "point": 85,
+      "id": 3
     }
   ],
   "projects": [
