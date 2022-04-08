@@ -31,8 +31,8 @@ export class SkillPageComponent implements OnInit {
         this.ps.deleteSkill(id).subscribe(data => {
         this.onGetList();
         });
+        this.toastr.success("Xóa thành công")
       }
-      this.toastr.success("Xóa thành công")
     }
   }
 
