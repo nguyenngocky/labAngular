@@ -13,6 +13,8 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { SkillPageComponent } from './view/admin/skill-page/skill-page.component';
 import { SkillAddPageComponent } from './view/admin/skill-add-page/skill-add-page.component';
 import { ShowValidateComponent } from './show-validate/show-validate.component';
+import { UserPageComponent } from './view/admin/user-page/user-page.component';
+import { UserUpdatePageComponent } from './view/admin/user-update-page/user-update-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ShowValidateComponent } from './show-validate/show-validate.component';
     SkillPageComponent,
     SkillAddPageComponent,
     ShowValidateComponent,
+    UserPageComponent,
+    UserUpdatePageComponent,
   ],
   imports: [
     BrowserModule,

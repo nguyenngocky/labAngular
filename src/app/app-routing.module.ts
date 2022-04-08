@@ -4,6 +4,8 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { HomeAdminPageComponent } from './view/admin/home-admin-page/home-admin-page.component';
 import { SkillAddPageComponent } from './view/admin/skill-add-page/skill-add-page.component';
 import { SkillPageComponent } from './view/admin/skill-page/skill-page.component';
+import { UserPageComponent } from './view/admin/user-page/user-page.component';
+import { UserUpdatePageComponent } from './view/admin/user-update-page/user-update-page.component';
 import { HomePageComponent } from './view/client/home-page/home-page.component';
 
 const routes: Routes = [
@@ -29,6 +31,14 @@ const routes: Routes = [
       {
         path: 'home-admin',
         component: HomeAdminPageComponent
+      },
+      {
+        path: 'user',
+        component: UserPageComponent
+      },
+      {
+        path: 'user/:id/edit',
+        component: UserUpdatePageComponent
       },
       {
         path: 'skill',
