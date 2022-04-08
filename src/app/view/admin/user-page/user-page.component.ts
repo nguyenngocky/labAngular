@@ -26,10 +26,12 @@ export class UserPageComponent implements OnInit {
 
   onDelete(id: number | string) {
     if(id) {
-      window.confirm("Bạn có muốn xóa ?");
-      this.ps.deleteUser(id).subscribe(data => {
-      this.onGetList();
-      });
+      const confirm = window.confirm("Bạn có muốn xóa ?");
+      if(confirm) {
+        this.ps.deleteUser(id).subscribe(data => {
+        this.onGetList();
+        });
+      }
       this.toastr.success("Xóa thành công")
     }
   }

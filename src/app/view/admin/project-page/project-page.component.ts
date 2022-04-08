@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { SkillService } from 'src/app/service/skill.service';
+import { ProjectsService } from 'src/app/service/project.service';
 
 @Component({
-  selector: 'app-skill-page',
-  templateUrl: './skill-page.component.html',
-  styleUrls: ['./skill-page.component.css']
+  selector: 'app-project-page',
+  templateUrl: './project-page.component.html',
+  styleUrls: ['./project-page.component.css']
 })
-export class SkillPageComponent implements OnInit {
-  skill: any;
+export class ProjectPageComponent implements OnInit {
+  project: any;
   constructor(
-    private ps: SkillService,
+    private ps: ProjectsService,
     private toastr: ToastrService
   ) { }
 
@@ -19,8 +19,8 @@ export class SkillPageComponent implements OnInit {
   }
 
   onGetList(){
-    this.ps.getSkills().subscribe(data => {
-      this.skill = data;
+    this.ps.getProjects().subscribe(data => {
+      this.project = data;
     });
   }
 
@@ -28,7 +28,7 @@ export class SkillPageComponent implements OnInit {
     if(id) {
       const confirm = window.confirm("Bạn có muốn xóa ?");
       if(confirm) {
-        this.ps.deleteSkill(id).subscribe(data => {
+        this.ps.deleteProject(id).subscribe(data => {
         this.onGetList();
         });
       }

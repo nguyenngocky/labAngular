@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "Nguyen Ngoc Ky",
       "profile__work": "backend developer",
       "age": 20,
       "birthday": "03/07/2002",
-      "phone": "0335075778",
+      "phone": 335075779,
       "email": "nguyenngocky1995@gmail.com",
       "address": "Ha Giang, Viet Nam",
       "image": "https://scontent.fpnh22-3.fna.fbcdn.net/v/t39.30808-6/265800883_429956338591065_7150281577074276316_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qwWiy3RhDZQAX8riKLN&_nc_ht=scontent.fpnh22-3.fna&oh=00_AT-hDBsXfhRGdhtvakXel4Ui4TFEetbI1jkm8X_7tGmTQg&oe=6252EB66",
       "git": "https://github.com/nguyenngocky",
       "facebook": "https://www.facebook.com/Legendary.kyy/",
-      "desc": "hello my name is Ky, ^^",
-      "resume": "My name is Nguyen Ngoc Ky, 18 years old this year and I come from Ha Giang, I am not very tall, my body is a bit thin, I have a cheerful, sociable, gentle personality and care for others . My hobbies are listening to music, playing games, reading books, like going out and going fishing on Sundays. I love sports like soccer, volleyball, badminton. I love to eat chicken and beef and especially i cook very well."
+      "desc": "hello my name is Ky ^^",
+      "resume": "My name is Nguyen Ngoc Ky, 18 years old this year and I come from Ha Giang, I am not very tall, my body is a bit thin, I have a cheerful, sociable, gentle personality and care for others . My hobbies are listening to music, playing games, reading books, like going out and going fishing on Sundays. I love sports like soccer, volleyball, badminton. I love to eat chicken and beef and especially i cook very well.",
+      "id": 1
     }
   ],
   "skills": [
@@ -44,50 +44,50 @@
   ],
   "projects": [
     {
-      "id": 1,
       "name": "Dự án website music",
       "image": "https://photo-zmp3.zmdcdn.me/banner/a/3/0/b/a30b4f6c23bbffbf47c5c4a7213023f5.jpg",
-      "create_at": "07/12/2021",
-      "complete_at": "25/12/2021",
-      "desc": "abcxyz"
+      "create_at": "2022-03-28",
+      "complete_at": "2022-04-24",
+      "desc": "abcxyz",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Dự án website bán điện thoại",
       "image": "https://mona-media.com/wp-content/uploads/2017/12/2b-3.jpg",
-      "create_at": "01/01/2022",
-      "complete_at": "25/01/2022",
-      "desc": "Siêu cấp website"
+      "create_at": "2022-02-09",
+      "complete_at": "2022-04-05",
+      "desc": "Siêu cấp website",
+      "id": 2
     }
   ],
   "schools": [
     {
-      "id": 1,
       "name": "Tiểu học Minh Lập",
-      "start_at": "01/03/2007",
-      "complete_at": "25/07/2010",
-      "achievement": "Đạt học sinh giỏi trong suốt năm học"
+      "start_at": "2007-03-08",
+      "complete_at": "2010-07-08",
+      "achievement": "Đạt học sinh giỏi trong suốt năm học",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "THCS Quang Minh",
-      "start_at": "05/08/2010",
-      "complete_at": "25/09/2015",
-      "achievement": "Đạt học sinh giỏi trong suốt năm học"
+      "start_at": "2010-08-08",
+      "complete_at": "2015-09-25",
+      "achievement": "Đạt học sinh giỏi trong suốt năm học",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "THPT Việt Vinh",
-      "start_at": "07/12/2015",
-      "complete_at": "25/12/2019",
-      "achievement": "Đạt học sinh tiên tiến trong suốt năm học"
+      "start_at": "2015-09-30",
+      "complete_at": "2019-12-08",
+      "achievement": "Đạt học sinh tiên tiến trong suốt năm học",
+      "id": 3
     },
     {
-      "id": 4,
       "name": "CĐ FPT Polytechnic",
-      "start_at": "12/03/2020",
-      "complete_at": "05/02/2023",
-      "achievement": "Full stack developer"
+      "start_at": "2020-12-08",
+      "complete_at": "2023-01-01",
+      "achievement": "Full stack developer",
+      "id": 4
     }
   ]
 }

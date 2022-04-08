@@ -1,0 +1,29 @@
+<div class="mt-3">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Bắt đầu</th>
+                <th>Hoàn thành</th>
+                <th>Thành tích</th>
+                <th><a class="btn btn-primary" [routerLink]="['/admin/school/create']">Tạo mới</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sc of school">
+                <td>{{sc.id}}</td>
+                <td>{{sc.name}}</td>
+                <td>{{sc.start_at}}</td>
+                <td>{{sc.complete_at}}</td>
+                <td>{{sc.achievement}}</td>
+                <td>
+                    <a [routerLink]="['/admin/school/', sc.id, 'edit']">
+                        <button class="btn btn-success">Sửa</button>
+                    </a>
+                    <button (click)="onDelete(sc.id)" class="btn btn-danger mx-2"> Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -15,6 +15,10 @@ import { SkillAddPageComponent } from './view/admin/skill-add-page/skill-add-pag
 import { ShowValidateComponent } from './show-validate/show-validate.component';
 import { UserPageComponent } from './view/admin/user-page/user-page.component';
 import { UserUpdatePageComponent } from './view/admin/user-update-page/user-update-page.component';
+import { ProjectPageComponent } from './view/admin/project-page/project-page.component';
+import { ProjectAddPageComponent } from './view/admin/project-add-page/project-add-page.component';
+import { SchoolPageComponent } from './view/admin/school-page/school-page.component';
+import { SchoolAddPageComponent } from './view/admin/school-add-page/school-add-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { UserUpdatePageComponent } from './view/admin/user-update-page/user-upda
     ShowValidateComponent,
     UserPageComponent,
     UserUpdatePageComponent,
+    ProjectPageComponent,
+    ProjectAddPageComponent,
+    SchoolPageComponent,
+    SchoolAddPageComponent,
   ],
   imports: [
     BrowserModule,

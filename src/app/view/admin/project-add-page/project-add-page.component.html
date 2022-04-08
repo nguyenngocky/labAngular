@@ -1,0 +1,57 @@
+<div class="mt-3">
+    <p>{{ projectForm.value | json }}</p>
+    <h3 class="text-center mt-3">Project</h3>
+<form style="max-width: 800px; margin: auto;" [formGroup]="projectForm" (submit)="OnUpdate(projectForm.value)">
+    <input *ngIf="id" type="hidden" name="id" [(ngModel)]="projectDetail.id">
+
+    <div class="mb-3">
+        <label for="">Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" formControlName="name" [(ngModel)]="projectDetail.name">
+        <app-show-validate
+        [formField]="projectForm.get('name')"
+        key="Name_skill"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">image</label>
+        <input type="text" class="form-control" placeholder="Enter your link Image" formControlName="image" [(ngModel)]="projectDetail.image">
+        <app-show-validate
+        [formField]="projectForm.get('image')"
+        key="Image"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">Create at</label>
+        <input type="date" class="form-control" placeholder="Enter your create_at" formControlName="create_at" [(ngModel)]="projectDetail.create_at">
+        <app-show-validate
+        [formField]="projectForm.get('create_at')"
+        key="Create at"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">Complete at</label>
+        <input type="date" class="form-control" placeholder="Enter your complete_at" formControlName="complete_at" [(ngModel)]="projectDetail.complete_at">
+        <app-show-validate
+        [formField]="projectForm.get('complete_at')"
+        key="Complete at"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">Desc</label>
+        <input type="text" class="form-control" placeholder="Enter your Desc" formControlName="desc" [(ngModel)]="projectDetail.desc">
+        <app-show-validate
+        [formField]="projectForm.get('desc')"
+        key="Desc"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <button [disabled]="!projectForm.valid" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+</div>
